@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
             welcomeText.style.transition = "opacity 1s ease-out";
             setTimeout(() => {
                 welcomeText.style.display = "none";
-            }, 2000); // Setelah opacity 0, baru dihilangkan dari layout
+            }, 3000); // Setelah opacity 0, baru dihilangkan dari layout
         }
-    }, 5000); // 5 detik setelah halaman dimuat
+    }, 7000); // 5 detik setelah halaman dimuat
 });
