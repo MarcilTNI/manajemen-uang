@@ -66,7 +66,11 @@ document.addEventListener("DOMContentLoaded", function () {
     setTimeout(function () {
         const welcomeText = document.querySelector(".fade-in");
         if (welcomeText) {
-            welcomeText.style.display = "none";
+            welcomeText.style.opacity = "0";
+            welcomeText.style.transition = "opacity 1s ease-out";
+            setTimeout(() => {
+                welcomeText.style.display = "none";
+            }, 3000); // Setelah opacity 0, baru dihilangkan dari layout
         }
-    }, 3000); // 3 detik setelah halaman dimuat
+    }, 7000); // 5 detik setelah halaman dimuat
 });
