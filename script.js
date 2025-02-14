@@ -61,3 +61,12 @@ function hapusTransaksi(id) {
 
     tampilkanTransaksi();
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    setTimeout(function () {
+        const welcomeText = document.querySelector(".fade-in");
+        if (welcomeText) {
+            welcomeText.style.display = "none";
+        }
+    }, 3000); // 3 detik setelah halaman dimuat
+});
